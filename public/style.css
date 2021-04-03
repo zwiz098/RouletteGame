@@ -1,0 +1,236 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+
+.jumbotron{
+  display: flex;
+  flex-direction: row;
+}
+
+.secBetAmount{
+  display: flex;
+  flex-direction: column;
+}
+.secPokerChips{
+  display: flex;
+}
+.row{
+  width: 308px;
+  margin: auto;
+}
+.res{
+  margin-top: -670px;
+}
+.col-sm-6{
+  margin-left: -55px;
+  margin-right: 120px;
+}
+.col-sm-6 h3{
+  background-color: lightgreen;
+}
+img{
+  height: 200px;
+}
+
+.num:hover{
+  background-color: magenta;
+  border-color: magenta;
+}
+
+.pokerchips{
+  width: 223px;
+  height: 239px;
+  float: left;
+}
+
+body.moving {
+  cursor: move;
+}
+
+.roulette {
+  margin: 40px;
+  padding: 40px;
+  background: #1C7022;
+  display: table;
+  position: relative;
+  width: 1100px;
+  /*transform: rotate(90deg);
+  margin:300px 0 0 -230px;*/
+}
+.roulette table {
+  float: left;
+  width: 1045px;
+  height: 300px;
+}
+.roulette table,
+tr {
+  border-collapse: collapse;
+  /*border-spacing: 0;*/
+}
+.roulette td {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 2px solid white;
+  width: 50px;
+  height: 46px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  white-space: nowrap;
+}
+/* elements */
+.roulette .sector {
+  background: #1C7022;
+  color: #8EB891;
+}
+.roulette .sector .vt {
+  font-size: 15px;
+}
+.roulette .num {
+  font-size: 22px;
+}
+.roulette .num span {
+  display: block;
+  transform: rotate(270deg);
+}
+.roulette .zero {
+  width: 70px;
+  font-size: 56px;
+}
+.roulette .empty {
+  border: none;
+}
+/* colors */
+.roulette .green {
+  background: #1C7022;
+  color: #8EB891;
+}
+.roulette .red {
+  background: #A91607;
+  color: #8EB891;
+}
+.roulette .black {
+  background: #010a01;
+  color: #8EB891;
+}
+
+
+/* chips image */
+#one{
+  background-image: url('../photos/one.png');
+  box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+  margin-bottom: -120px;
+}
+#one:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+#five{
+  background-image: url('../photos/five.png');
+  box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+  margin-bottom: -120px;
+}
+#five:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+#twentyfive{
+  background-image: url('../photos/twentyfive.png');
+  box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+}
+#twentyfive:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+#fifty{
+  background-image: url('../photos/fifty.png');
+  box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+  margin-bottom: -120px;
+}
+#fifty:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+#onehund{
+  background-image: url('../photos/onehund.png');
+  box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+  margin-bottom: -120px;
+}
+#onehund:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+#fivehund{
+  background-image: url('../photos/fivehund.png');
+  box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+}
+#fivehund:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+#onethou{
+  background-image: url('../photos/onethous.png');
+  box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+  margin-bottom: -120px;
+}
+#onethou:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+#fivethou{
+  background-image: url('../photos/fivethous.png');
+  box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+  margin-bottom: -120px;
+}
+#fivethou:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+#tenthou{
+  background-image: url('../photos/tenthous.png');
+  box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+}
+#tenthou:hover{
+  transform: scale(1.2);
+  box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+
+
+/* chips glow */
+.pokerchips
+{
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+/* .btn.fb-btn
+{
+    box-shadow: 0 20px 20px -17px rgba(0,111,255,0.53);
+}
+.btn.fb-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(0,111,255,0.65);
+}
+.btn.ig-btn
+{
+    box-shadow: 0 20px 20px -17px rgba(255,16,39,0.5);
+}
+.btn.ig-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(255,16,39,0.57);
+}
+.btn.tw-btn
+{
+    box-shadow: 0 20px 20px -17px rgba(0,255,255,0.53);
+}
+.btn.tw-btn:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 30px 45px -15px rgba(0,111,255,0.6);
+} */

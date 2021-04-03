@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <title>Roulette Game</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <div class="roulette">
+             <table>
+                 <tr class="nums">
+                     <td class="num green zero" rowspan="3"><span>0</span></td>
+                     <td data-value="red" class="num red"><span>3</span></td>
+                     <td data-value="black" class="num black"><span>6</span></td>
+                     <td data-value="red" class="num red"><span>9</span></td>
+                     <td data-value="red" class="num red"><span>12</span></td>
+                     <td data-value="black" class="num black"><span>15</span></td>
+                     <td data-value="red" class="num red"><span>18</span></td>
+                     <td data-value="red" class="num red"><span>21</span></td>
+                     <td data-value="black" class="num black"><span>24</span></td>
+                     <td data-value="red" class="num red"><span>27</span></td>
+                     <td data-value="red" class="num red"><span>30</span></td>
+                     <td data-value="black" class="num black"><span>33</span></td>
+                     <td data-value="red" class="num red"><span>36</span></td>
+                 </tr>
+                 <tr class="nums">
+                     <td class="hidden"></td>
+                     <td data-value="black" class="num black"><span>2</span></td>
+                     <td data-value="red" class="num red"><span>5</span></td>
+                     <td data-value="black" class="num black"><span>8</span></td>
+                     <td data-value="black" class="num black"><span>11</span></td>
+                     <td data-value="red" class="num red"><span>14</span></td>
+                     <td data-value="black" class="num black"><span>17</span></td>
+                     <td data-value="black" class="num black"><span>20</span></td>
+                     <td data-value="red" class="num red"><span>23</span></td>
+                     <td data-value="black" class="num black"><span>26</span></td>
+                     <td data-value="black" class="num black"><span>29</span></td>
+                     <td data-value="red" class="num red"><span>32</span></td>
+                     <td data-value="black" class="num black"><span>35</span></td>
+                 </tr>
+                 <tr class="nums">
+                     <td class="hidden"></td>
+                     <td data-value="red" class="num red"><span>1</span></td>
+                     <td data-value="black" class="num black"><span>4</span></td>
+                     <td data-value="red" class="num red"><span>7</span></td>
+                     <td data-value="black" class="num black"><span>10</span></td>
+                     <td data-value="black" class="num black"><span>13</span></td>
+                     <td data-value="red" class="num red"><span>16</span></td>
+                     <td data-value="red" class="num red"><span>19</span></td>
+                     <td data-value="black" class="num black"><span>22</span></td>
+                     <td data-value="red" class="num red"><span>25</span></td>
+                     <td data-value="black" class="num black"><span>28</span></td>
+                     <td data-value="black" class="num black"><span>31</span></td>
+                     <td data-value="red" class="num red"><span>34</span></td>
+             </table>
+
+    </div>
+  <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+  <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+
+
+    <section class = "secPlayerTotal">
+        <h3 class="h3"></h3>
+        <h3 class ="h3PlayerTotal">0</h3>
+    </section>
+
+    <section class ="secPlayerSelection">
+        <h2 class ="h2PlayerChoice"></h2>
+    </section>
+
+    <section class ="secComputerSelection">
+        <h2 class ="h2ComputerChoice"></h2>
+    </section>
+
+    <section class ="secResults">
+        <h2 class ="h2Results"></h2>
+    </section>
+
+
+      <div class="jumbotron text-center">
+          <section class ="secBetAmount">
+              <h2 class ="h2BetAmount"></h2>
+              <button id="submitBet" type="button" name="submitBet">BET</button>
+          </section>
+
+
+        <button id="restBet" type="button" name="resetBet">RESET</button>
+
+        <section class = "secPokerChips">
+          <section>
+            <div id="one" class="pokerchips" data-value="1"></div>
+            <div id="five" class="pokerchips" data-value="5"></div>
+            <div id="twentyfive" class="pokerchips" data-value="25"></div>
+          </section>
+          <section>
+            <div id="fifty" class="pokerchips" data-value="50"></div>
+            <div id="onehund" class="pokerchips" data-value="100"></div>
+            <div id="fivehund" class="pokerchips" data-value="500"></div>
+          </section>
+          <section>
+            <div id="onethou" class="pokerchips" data-value="1000"></div>
+            <div id="fivethou" class="pokerchips" data-value="5000"></div>
+            <div id="tenthou" class="pokerchips" data-value="10000"></div>
+          </section>
+        </section>
+
+      </div>
+</body>
+<script type="text/javascript" src="main.js" >
+
+</script>
+</html>

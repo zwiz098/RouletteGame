@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title>21 Savage Fan Site</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+          <h3>Log</h3>
+          <ul class="messages">
+          <% for(var i=0; i<documents.length; i++) {%>
+            <li class="message" data-docId ='<%= documents[i]._id %>'>
+              <span><%= documents[i].winner %></span>
+              <span><%= documents[i].loser %></span>
+              <span><%= documents[i].betAmount %></span>
+            </li>
+          <% } %>
+          </ul>
+        <% if (user.local.email) { %>
+        </div>
+        <% } %>
+
+  </div>
+  <div class="res">
+    <section class ="secResultsProfits">
+      <section>
+        <h2>NET PROFITS</h2>
+          <span class ="spanNetProfit"><%= '$' + addProfits[0].total %></span>
+      </section>
+      <section>
+        <h2>PROFITS</h2>
+          <span class ="spanNetProfit"><%= '$' + (addProfits[0].total - subtractProfits) %></span>
+      </section>
+      <section>
+        <h2>LOSSES</h2>
+          <span class ="spanProfit"><%= '$' + Math.abs(subtractProfits) %></span>
+      </section>
+
+    </section>
+
+    <section class ="secResultsPlayerStats">
+      <h2>House Wins</h2>
+        <span class ="spanPlayerWins"><%= winnerCasino %></span>
+      <h2>Player Wins</h2>
+        <span class ="spanHouseWins"><%= playerCasino %></span>
+
+    </section>
+  </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
