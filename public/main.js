@@ -1,3 +1,5 @@
+//House Mosses!!
+
 // var button = document.querySelector('button').addEventListener('click', bet)
 
 //Player's Bet
